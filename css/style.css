@@ -1,0 +1,141 @@
+/*color principal:#F5F5F5*/
+/*color secundario:#DEDEDE*/
+/*color terciario:#C6C6C6
+  azul principal: #569FD7*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    max-width: 100vw;
+
+    background-image: url('../img/fondo3.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* contenedores */
+.contenedor-informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+#indicador{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+    
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.9));
+    color: white;
+
+}
+#teclado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#input-numero{
+    outline: none;
+    border-radius: 30px;
+    padding: 25px 70px;
+    border: solid 3px red;
+}
+
+#contenedor-estado-juego{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 50px;
+    border-radius: 15px;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.4);
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+#contenedor-estado-juego.activo{
+    visibility: visible;
+}
+#registro-de-intentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* detalles menores */
+.boton-accion{
+    outline: none;
+    border: solid 3px #363a3c;
+    background-color: #000000;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 150px;
+    padding: 10px 30px;
+    
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.5s ease;
+}
+.boton-accion:hover{
+    box-shadow: 0px 0px 20px rgba(255,255, 255, 0.7);
+    cursor: pointer;    
+}
+#boton-ingresar{
+    background-color: rgb(236, 224, 0);
+    border: solid 3px rgb(193, 183, 0);
+    color: black;
+    font-weight: bold;
+}
+#primera-linea{
+    margin: 30px 0;
+}
+#segunda-linea{
+    color: black;
+    font-weight: bold;
+}
+.imagenVictoriaDerrota{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+li{
+    margin: 0px 30px;
+    padding: 30px 0 0 0;
+    border-bottom: solid 2px black;
+    display: flex;
+    color: white;
+}
